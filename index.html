@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apify - Web Scraping Platform</title>
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
+      <div class="container-fluid px-4">
+        <!-- Logo -->
+        <a
+          class="navbar-brand fw-bold fs-4 text-dark d-flex align-items-center"
+          href="#"
+        >
+          <div class="navbar-brand-icon me-2">
+            <i class="fas fa-database text-white small"></i>
+          </div>
+          apify
+        </a>
+
+        <!-- Mobile toggle -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation menu -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <!-- Product -->
+            <li class="nav-item dropdown me-3">
+              <a
+                class="nav-link dropdown-toggle fw-semibold text-dark"
+                href="#"
+                data-bs-toggle="dropdown"
+                >Product</a
+              >
+              <ul class="dropdown-menu border-0 shadow">
+                <li><a class="dropdown-item py-2" href="#">Apify Store</a></li>
+                <li>
+                  <a class="dropdown-item py-2" href="#">Apify Console</a>
+                </li>
+                <li><a class="dropdown-item py-2" href="#">Apify SDK</a></li>
+              </ul>
+            </li>
+            <!-- Solutions -->
+            <li class="nav-item dropdown me-3">
+              <a
+                class="nav-link dropdown-toggle fw-semibold text-dark"
+                href="#"
+                data-bs-toggle="dropdown"
+                >Solutions</a
+              >
+              <ul class="dropdown-menu border-0 shadow">
+                <li><a class="dropdown-item py-2" href="#">E-commerce</a></li>
+                <li><a class="dropdown-item py-2" href="#">Social Media</a></li>
+                <li>
+                  <a class="dropdown-item py-2" href="#"
+                    >Business Intelligence</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <!-- Developers -->
+            <li class="nav-item dropdown me-3">
+              <a
+                class="nav-link dropdown-toggle fw-semibold text-dark"
+                href="#"
+                data-bs-toggle="dropdown"
+                >Developers</a
+              >
+              <ul class="dropdown-menu border-0 shadow">
+                <li>
+                  <a class="dropdown-item py-2" href="#">Documentation</a>
+                </li>
+                <li>
+                  <a class="dropdown-item py-2" href="#">API Reference</a>
+                </li>
+                <li><a class="dropdown-item py-2" href="#">Tutorials</a></li>
+              </ul>
+            </li>
+            <!-- Resources -->
+            <li class="nav-item dropdown me-3">
+              <a
+                class="nav-link dropdown-toggle fw-semibold text-dark"
+                href="#"
+                data-bs-toggle="dropdown"
+                >Resources</a
+              >
+              <ul class="dropdown-menu border-0 shadow">
+                <li><a class="dropdown-item py-2" href="#">Blog</a></li>
+                <li><a class="dropdown-item py-2" href="#">Case Studies</a></li>
+                <li><a class="dropdown-item py-2" href="#">Community</a></li>
+              </ul>
+            </li>
+            <!-- Pricing -->
+            <li class="nav-item me-3">
+              <a class="nav-link fw-semibold text-dark" href="#">Pricing</a>
+            </li>
+          </ul>
+
+          <!-- CTA Buttons -->
+          <div class="d-flex flex-column flex-lg-row gap-2">
+            <button class="btn btn-outline-dark fw-semibold px-4 py-2">
+              Contact sales
+            </button>
+            <button
+              class="btn btn-link text-dark fw-semibold text-decoration-none"
+            >
+              Log in
+            </button>
+            <button class="btn btn-dark fw-semibold px-4 py-2">
+              Get started
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero-section">
+      <div class="floating-elements">
+        <div class="floating-element"><i class="fas fa-code fa-3x"></i></div>
+        <div class="floating-element"><i class="fas fa-robot fa-3x"></i></div>
+        <div class="floating-element"><i class="fas fa-cloud fa-3x"></i></div>
+      </div>
+
+      <div class="container hero-content text-center position-relative z-2">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 col-xl-8">
+            <h1 class="display-4 fw-bold mb-4">
+              Your full-stack platform for<br />
+              <span class="gradient-text">web scraping</span>
+            </h1>
+
+            <p class="lead text-secondary mb-4">
+              Apify is the largest ecosystem where developers build, deploy, and
+              publish web scrapers, AI agents, and automation tools. We call
+              them Actors.
+            </p>
+
+            <!-- Search with Typing Placeholder -->
+            <div class="search-box">
+              <div class="input-group input-group-lg shadow rounded">
+                <input
+                  type="text"
+                  class="form-control border-0"
+                  id="searchInput"
+                  placeholder="Search actors, scrapers..."
+                />
+                <button class="btn btn-dark px-4" type="button">
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cards Section -->
+    <section class="cards-section">
+      <div class="container">
+        <div class="cards-grid">
+          <!-- TikTok Scraper -->
+          <div class="scraper-card">
+            <div class="card-header">
+              <div class="card-icon tiktok-icon">🎵</div>
+              <div>
+                <div class="card-title">TikTok Scraper</div>
+                <div class="card-subtitle">clockworks/tiktok-scraper</div>
+              </div>
+            </div>
+            <div class="card-description">
+              Extract data from TikTok videos, hashtags, and users. Use URLs or
+              search queries to scrape...
+            </div>
+            <div class="card-footer">
+              <div class="card-author">
+                <div class="author-avatar"></div>
+                Clockworks
+              </div>
+              <div class="card-stats">
+                <div class="stat">👥 59K</div>
+                <div class="stat">⭐ 4.5</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Google Maps Scraper -->
+          <div class="scraper-card">
+            <div class="card-header">
+              <div class="card-icon maps-icon">🗺️</div>
+              <div>
+                <div class="card-title">Google Maps Scraper</div>
+                <div class="card-subtitle">compass/crawler-google-places</div>
+              </div>
+            </div>
+            <div class="card-description">
+              Extract data from thousands of Google Maps locations and
+              businesses, including reviews,...
+            </div>
+            <div class="card-footer">
+              <div class="card-author">
+                <div class="author-avatar"></div>
+                Compass
+              </div>
+              <div class="card-stats">
+                <div class="stat">👥 147K</div>
+                <div class="stat">⭐ 4.1</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Instagram Scraper -->
+          <div class="scraper-card">
+            <div class="card-header">
+              <div class="card-icon instagram-icon">📸</div>
+              <div>
+                <div class="card-title">Instagram Scraper</div>
+                <div class="card-subtitle">apify/instagram-scraper</div>
+              </div>
+            </div>
+            <div class="card-description">
+              Scrape and download Instagram posts, profiles, places, hashtags,
+              photos, and comments. Get...
+            </div>
+            <div class="card-footer">
+              <div class="card-author">
+                <div class="author-avatar"></div>
+                Apify
+              </div>
+              <div class="card-stats">
+                <div class="stat">👥 122K</div>
+                <div class="stat">⭐ 4.1</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Website Content Crawler -->
+          <div class="scraper-card">
+            <div class="card-header">
+              <div class="card-icon website-icon">🕷️</div>
+              <div>
+                <div class="card-title">Website Content Crawler</div>
+                <div class="card-subtitle">apify/website-content-crawler</div>
+              </div>
+            </div>
+            <div class="card-description">
+              Crawl websites and extract text content to feed AI models, LLM
+              applications, vector databases, or...
+            </div>
+            <div class="card-footer">
+              <div class="card-author">
+                <div class="author-avatar"></div>
+                Apify
+              </div>
+              <div class="card-stats">
+                <div class="stat">👥 69K</div>
+                <div class="stat">⭐ 4.4</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Amazon Scraper -->
+          <div class="scraper-card">
+            <div class="card-header">
+              <div class="card-icon amazon-icon">📦</div>
+              <div>
+                <div class="card-title">Amazon Scraper</div>
+                <div class="card-subtitle">
+                  junglee/free-amazon-product-scraper
+                </div>
+              </div>
+            </div>
+            <div class="card-description">
+              Gets you product data from Amazon. Unofficial API. Scrapes and
+              downloads product information...
+            </div>
+            <div class="card-footer">
+              <div class="card-author">
+                <div class="author-avatar"></div>
+                Junglee
+              </div>
+              <div class="card-stats">
+                <div class="stat">👥 7.7K</div>
+                <div class="stat">⭐ 4.3</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Build Your Own Actor -->
+          <div class="scraper-card">
+            <div class="card-header">
+              <div class="card-icon build-icon">💡</div>
+              <div>
+                <div class="card-title">Build your own Actor</div>
+                <div class="card-subtitle">you/new-idea</div>
+              </div>
+            </div>
+            <div class="card-description">
+              Apify gives you all the tools and documentation you need to build
+              reliable scrapers. Fast.
+            </div>
+            <div class="card-footer">
+              <div class="card-author">
+                <div class="author-avatar"></div>
+                >_ You? 👨‍💻
+              </div>
+              <div class="card-stats">
+                <div class="stat">👥 -</div>
+                <div class="stat">⭐ 5.0</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <!-- Company Info -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="footer-logo">
+              <div class="footer-logo-icon">
+                <i class="fas fa-database text-white"></i>
+              </div>
+              <h4 class="mb-0 fw-bold">apify</h4>
+            </div>
+            <p class="footer-description">
+              The full-stack platform for web scraping, browser automation, and
+              data extraction. Build, deploy, and scale your scrapers with ease.
+            </p>
+            <div class="social-links">
+              <a href="#" class="social-link">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-link">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="#" class="social-link">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="#" class="social-link">
+                <i class="fab fa-discord"></i>
+              </a>
+              <a href="#" class="social-link">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Product -->
+          <div class="col-lg-2 col-md-3 col-6 mb-4">
+            <h5>Product</h5>
+            <ul class="footer-links">
+              <li><a href="#">Apify Store</a></li>
+              <li><a href="#">Apify Console</a></li>
+              <li><a href="#">Apify SDK</a></li>
+              <li><a href="#">Apify CLI</a></li>
+              <li><a href="#">Browser Pool</a></li>
+              <li><a href="#">Proxy</a></li>
+            </ul>
+          </div>
+
+          <!-- Solutions -->
+          <div class="col-lg-2 col-md-3 col-6 mb-4">
+            <h5>Solutions</h5>
+            <ul class="footer-links">
+              <li><a href="#">E-commerce</a></li>
+              <li><a href="#">Social Media</a></li>
+              <li><a href="#">Lead Generation</a></li>
+              <li><a href="#">Price Monitoring</a></li>
+              <li><a href="#">Market Research</a></li>
+              <li><a href="#">AI & ML</a></li>
+            </ul>
+          </div>
+
+          <!-- Resources -->
+          <div class="col-lg-2 col-md-3 col-6 mb-4">
+            <h5>Resources</h5>
+            <ul class="footer-links">
+              <li><a href="#">Documentation</a></li>
+              <li><a href="#">API Reference</a></li>
+              <li><a href="#">Tutorials</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Case Studies</a></li>
+              <li><a href="#">Community</a></li>
+            </ul>
+          </div>
+
+          <!-- Newsletter -->
+          <div class="col-lg-2 col-md-3 col-6 mb-4">
+            <h5>Stay Updated</h5>
+
+            <ul class="footer-links">
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Status</a></li>
+              <li><a href="#">Pricing</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+          <p>&copy; 2024 Apify Technologies s.r.o. All rights reserved.</p>
+          <div class="footer-bottom-links"></div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.js"></script>
+  </body>
+</html>
